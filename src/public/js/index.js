@@ -3,7 +3,7 @@
 
 const myHost = window.location.hostname
 const wsPort = 8018
-const wsUrl = `ws://${myHost}:${wsPort}/`
+const wsUrl = `wss://${myHost}/`
 
 const httpUrl = `http://${myHost}:8017/`
 
