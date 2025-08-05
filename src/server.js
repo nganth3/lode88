@@ -13,7 +13,7 @@ import { env } from "../src/config/environment.js"
 import { CLOSE_DB, CONNECT_DB } from "../src/config/mongodb.js"
 import { START_WEB_SOCKET } from "../src/sockets/serverSocket.js"
 
-import { router } from "~/routes/index"
+import { router } from "/src/routes/index.js"
 
 const START_SERVER = () => {
   const app = express()
