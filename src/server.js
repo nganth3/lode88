@@ -46,8 +46,8 @@ const START_SERVER = () => {
 
   //app.use("/api/v1", indexRouter)
 
-  app.listen(env.APP_PORT, env.APP_HOST, () => {
-    console.log(`Server is running at ${env.APP_HOST} port ${env.APP_PORT}`)
+  app.listen(env.APP_PORT, () => {
+    console.log(`Server is running at port ${env.APP_PORT}`)
   })
 
   exitHook(() => {
