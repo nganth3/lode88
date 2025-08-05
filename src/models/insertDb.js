@@ -1,6 +1,6 @@
 import moment from "moment"
-import { GET_DB } from "~/config/mongodb"
-import { } from "~/sockets/serverSocket"
+import { GET_DB } from "../config/mongodb.js"
+import {} from "../sockets/serverSocket.js"
 import { getSoHienTai, getSoTheoChuky } from "./getResult_module"
 import { thongkeSolanXuathien } from "./thongke"
 // import {get} // Removed invalid import statement
@@ -21,7 +21,7 @@ const makeDb = async () => {
       reject("sohientai null")
     }
 
-    if (sohientai != undefined && (sohientai.current == phienHientai)) {
+    if (sohientai != undefined && sohientai.current == phienHientai) {
       const msg_timeleft = {
         msg: "timer",
         type: 300,
@@ -57,8 +57,6 @@ const makeDb = async () => {
           reject("lỗi tại coll_statistical")
         })
     }
-
-
   })
 }
 const repair_db = async () => {
