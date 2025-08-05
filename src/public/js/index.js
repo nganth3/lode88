@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 // WebSocket client optimized
 
-const myHost = "nganth3.ddnsfree.com"
+const myHost = window.location.hostname
 const wsPort = 8018
-const wsUrl = `ws://nganth3.ddnsfree.com:${wsPort}/`
+const wsUrl = `ws://${myHost}:${wsPort}/`
 
 const httpUrl = `http://${myHost}:8017/`
 
