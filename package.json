@@ -6,10 +6,12 @@
   "scripts": {
     "lint": "eslint src --ext js --report-unused-disable-directives --max-warnings 0",
     "clean": "rm -rf build && mkdir build",
-    "build-babel": "babel ./src -d ./build/src",
-    "build": "npm run clean && npm run build-babel",
+    "build-babel": "babel ./src -d ./build/src --copy-files",
+    "build-babel-api": "babel ./api -d ./build/api",
+    "build": "npm run clean && npm run build-babel && npm run build-babel-api",
+    "start": "node ./build/api/index.js ",
     "production": "npm run build && node ./build/src/server.js",
-    "start": "nodemon --exec babel-node ./src/server.js",
+    "dev": "nodemon --exec babel-node ./src/server.js",
     "startws": "npx babel-node ./src/sockets/serverSocket.js",
     "test": "npx babel-node ./src/services/test.js"
   },

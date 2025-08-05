@@ -62,7 +62,8 @@ const START_APP = async () => {
     START_SERVER()
     MY_SERVICES.SERVICE_UPDATE_BROADCAST_DB()
     MY_SERVICES.repair()
-    START_WEB_SOCKET(env.SOCKET_PORT) // Start WebSocket server
+    START_WEB_SOCKET(env.SOCKET_PORT)
+    console.log(env.SOCKET_PORT) // Start WebSocket server
     // START_WEB_SOCKET()
     // console.log(a
     // wait GET_DB().listCollections().toArray())
