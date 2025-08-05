@@ -5,12 +5,12 @@ const myHost = window.location.hostname
 const wsPort = 8018
 const wsUrl = `wss://${myHost}/`
 
-const httpUrl = `http://${myHost}:8017/`
+// const httpUrl = `http://${myHost}:8017/`
 
 const ws = new WebSocket(wsUrl, "echo-protocol")
-async function fetchStatistical(url, options) {
+async function fetchStatistical(options) {
   try {
-    const res = await fetch(url, options)
+    const res = await fetch("/", options)
     if (!res) throw new Error("Network response was not ok")
     return await res.json()
   } catch (err) {
@@ -20,7 +20,7 @@ async function fetchStatistical(url, options) {
 }
 
 async function loadManualValue() {
-  const url = `${httpUrl}statistical_manual`
+  const url = `/statistical_manual`
   const soluong = parseInt($("#soluongchuky").val())
   let options = {
     method: "POST",
@@ -31,7 +31,7 @@ async function loadManualValue() {
     body: JSON.stringify({ soluongchuky: soluong, loai: 300 })
   }
 
-  const content = await fetchStatistical(url, options)
+  const content = await fetchStatistical(options)
 
   if (content) {
     updateDiv([content])

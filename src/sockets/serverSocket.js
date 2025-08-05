@@ -56,8 +56,8 @@ wsServer.on("request", (request) => {
 })
 
 // Hàm khởi động WebSocket server
-export function START_WEB_SOCKET(port = process.env.SOCKET_PORT || 8017) {
-  server.listen(port, () => {
+export function START_WEB_SOCKET() {
+  server.listen(() => {
     console.log(`${new Date()} WebSocket server started on port ${port}`)
   })
 }
