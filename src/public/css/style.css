@@ -1,0 +1,85 @@
+body {
+  text-align: center;
+  font-size: large;
+}
+
+.input-search {
+  width: 80px;
+  display: inline-block;
+}
+.icon-toogle {
+  float: right;
+}
+.thongke_title {
+  text-align: left;
+  margin-left: 15px;
+}
+.table-infor {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.cell {
+  padding: 0;
+  margin: 0;
+}
+#title_5p {
+  margin: 10px;
+}
+.title-center-h {
+  margin: 10px;
+}
+.highlighted {
+  /* text-decoration: underline overline #ff3028; */
+  border-style: solid;
+  border-color: red;
+}
+.is-error {
+  color: red;
+}
+.title_child {
+  width: 100%;
+}
+
+.columns,
+.column {
+  margin-bottom: 0px;
+}
+.columns:not(:last-child) {
+  margin-bottom: 5px;
+}
+.columns {
+  margin-inline-end: 10px;
+  margin-inline-start: 10px;
+  margin-top: 0px;
+}
+.chuaxo {
+  color: blue;
+}
+:root {
+  --bulma-column-gap: 0rem;
+}
+.box {
+  --bulma-box-padding: 0.25rem;
+  --bulma-block-spacing: 0.25rem;
+}
+.modal-card-title {
+ /* font-size: large; */
+}
+.mybox {
+  padding: auto;
+  margin-top: 10px;
+}
+.chitietso {
+  text-align: left;
+  font-size: 10px;
+}
+.modal {
+  --bulma-modal-card-head-padding: 1rem;
+}
+
+.modal-card {
+  /* font-size: large; */
+}
+.modal-card-body {
+  padding-bottom: 15px;
+}

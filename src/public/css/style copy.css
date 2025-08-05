@@ -1,0 +1,159 @@
+body {
+  width: 100%;
+  padding-left: 10;
+  padding-right: 10px;
+
+  /* background-image: linear-gradient(rgba(3, 2, 12, 0.384), rgb(51, 50, 54)) */
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.column {
+  padding: 0;
+  margin: 0;
+}
+
+.title-thongke {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+}
+.icon-thongke {
+  padding-bottom: 10px;
+}
+.item-thongke {
+  margin-top: 15px;
+}
+.cell {
+  padding: 0;
+}
+.box {
+  padding: 5px;
+}
+.title-thongke {
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 5px;
+  display: inline-block;
+  background-color: blue;
+}
+.table-infor {
+  max-height: 120px;
+  overflow-y: scroll;
+}
+/* 
+.icon-top-r {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  font-size: 25px;
+}
+.icon-top-l {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  font-size: 28px;
+}
+.icon-close-left {
+  margin-right: 30px;
+}
+.icon-close-left:hover {
+  color: blue;
+  cursor: pointer;
+}
+.icon-top-r:hover {
+  color: blue;
+  cursor: pointer;
+}
+.label-result {
+  padding: 5px;
+  font-size: 20px;
+  text-align: justify;
+  font-weight: normal;
+}
+#section_detail {
+  word-wrap: break-word;
+}
+
+.witdh-mobile {
+  max-width: 200px;
+}
+
+.modal-card {
+}
+INPUT[type="date"] {
+  max-width: 150px;
+}
+.my-label {
+  padding-top: 5px;
+  height: 5px;
+  width: fit-content;
+  margin-right: 10px;
+}
+
+.date-input {
+  max-width: 300px;
+}
+.date-input-group {
+  max-width: 500px;
+  padding: 10px;
+}
+
+.column {
+  padding: 0;
+  margin: 0;
+}
+
+
+.icon-thongke {
+  padding-bottom: 10px;
+}
+.item-thongke {
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: justify;
+  font-weight: normal;
+}
+.cell {
+  padding: 0;
+}
+
+.cell-detail-dai {
+  float: left;
+  text-align: left;
+  font-size: 22px;
+}
+.max-grid-heigh {
+  max-height: 200px;
+  overflow-y: auto;
+}
+#tab_search,
+#tab_thongke {
+  margin-left: 10px;
+}
+.is-3-mobile {
+  margin-left: 10px;
+}
+
+#btn_search {
+  display: inline-block;
+}
+.is-centered {
+  text-align: justify;
+}
+.width-3-char {
+  font-family: monospace;
+  width: 50px;
+}
+
+.modal-content {
+  font-size: large;
+}
+
+.my-main-lable {
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */

@@ -1,0 +1,3 @@
+
+
+module.exports = { getSoTheoChuky, getSoHienTai }

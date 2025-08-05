@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="#" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=0.9, maximum-scale=1, minimum-scale=0.8, user-scalable=no" />
+  <title>Thống kê Lode</title>
+  <link rel="stylesheet" href="/css/bulma.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <%- include('./partials/modal'); %> <%- include('./partials/thongke_auto_5p_title'); %>
+      <div class="tabs is-small is-boxed">
+        <ul>
+          <li class="tabs-tab" tab-content="hientai">
+            <a>Hiện tại</a>
+          </li>
+          <li class="tabs-tab" tab-content="10p"><a>10 Phiên</a></li>
+          <li class="tabs-tab is-active" tab-content="all"><a>Cả ngày</a></li>
+          <li class="tabs-tab" tab-content="manual"><a>Tùy chọn</a></li>
+          <li class="tabs-tab" tab-content="remember_number"><a>Nhớ số</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="tabs-tab-content hientai is-hidden">
+          <%- include('./partials/thongke_auto_5p_cr'); %>
+        </div>
+        <div class="tabs-tab-content 10p is-hidden">
+          <%- include('./partials/thongke_auto_5p_10p'); %>
+        </div>
+        <div class="tabs-tab-content all">
+          <%- include('./partials/thongke_auto_5p_all'); %>
+        </div>
+        <div class="tabs-tab-content manual is-hidden">
+          <%- include('./partials/thongke_manual'); %> <%- include('./partials/thongke_auto_5p_manual'); %>
+        </div>
+        <div class="tabs-tab-content manual is-hidden">
+          <%- include('./partials/nhoso'); %>
+        </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+      <script src="/js/render_view.js" type="application/javascript"></script>
+      <script src="/js/index.js" type="application/javascript"></script>
+      <script src="/js/toogle.js" type="application/javascript"></script>
+      <script src="/js/findnumber.js" type="application/javascript"></script>
+      <script src="/js/modal.js" type="application/javascript"></script>
+
+      <!-- Ensure the file exists and is served with the correct MIME type -->
+</body>
+
+</html>
