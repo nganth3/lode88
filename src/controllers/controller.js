@@ -6,7 +6,7 @@
 import {
   REPLY_STATISTICAL,
   REPLY_STATISTICAL_MANUAL
-} from "~/models/reply_statistical"
+} from "../models/reply_statistical.js"
 let index = (req, res) => {
   res.render("index", { title: "Expresxsx" })
 }
@@ -33,5 +33,6 @@ let mt4_id = (req, res) => {
 export const CONTROLER = {
   index,
   statistical_auto,
-  statistical_manual, mt4_id
+  statistical_manual,
+  mt4_id
 }
