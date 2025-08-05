@@ -1,5 +1,5 @@
-import { GET_DB } from "~/config/mongodb"
-import { BROADCAST_MESSEAGE } from "~/sockets/serverSocket"
+import { GET_DB } from "../config/mongodb"
+import { BROADCAST_MESSEAGE } from "..serverSocket/sockets/serverSocket"
 import { makeDb, repair_db } from "../models/insertDb"
 let allwayrun = true
 const SERVICE_UPDATE_BROADCAST_DB = async () => {
