@@ -1,6 +1,6 @@
 import express from "express"
 
-import { CONTROLER } from "~/controllers/controller"
+import { CONTROLER } from "../controllers/controller"
 export const router = express.Router()
 const corsOptions = {
   origin: ["http://localhost:8017", "http://nganth3.ddnsfree.com:8017"], // Allow all origins (for development). Change to specific domains in production.
