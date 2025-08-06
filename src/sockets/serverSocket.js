@@ -5,10 +5,10 @@ import { server as WebSocketServer } from "websocket"
 const clients = new Set()
 
 // HTTP server chỉ để bắt request không hợp lệ
-const server = createServer((_, res) => {
-  res.writeHead(404)
-  res.end()
-})
+// const server = createServer((_, res) => {
+//   res.writeHead(404)
+//   res.end()
+// })
 
 // Khởi tạo WebSocket server
 const wsServer = new WebSocketServer({
@@ -57,7 +57,7 @@ wsServer.on("request", (request) => {
 
 // Hàm khởi động WebSocket server
 export function START_WEB_SOCKET() {
-  server.listen(() => {
+  wsServer.listen(() => {
     console.log(`${new Date()} WebSocket server started on port ${port}`)
   })
 }
