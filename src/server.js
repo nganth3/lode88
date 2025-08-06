@@ -15,6 +15,7 @@ import { START_WEB_SOCKET } from "../src/sockets/serverSocket.js"
 
 import { router } from "./routes/index.js"
 const app = express()
+
 const START_SERVER = (app) => {
   // Define CORS options before using them
   const corsOptions = {
@@ -71,5 +72,5 @@ const START_APP = async () => {
     process.exit(0)
   }
 }
-START_APP()
+//START_APP()
 export default START_APP
