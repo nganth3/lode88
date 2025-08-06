@@ -14,10 +14,8 @@ import { CLOSE_DB, CONNECT_DB } from "../src/config/mongodb.js"
 import { START_WEB_SOCKET } from "../src/sockets/serverSocket.js"
 
 import { router } from "./routes/index.js"
-
-const START_SERVER = () => {
-  const app = express()
-
+const app = express()
+const START_SERVER = (app) => {
   // Define CORS options before using them
   const corsOptions = {
     allowedHeaders: ["*"], // you can change the headers
@@ -55,14 +53,15 @@ const START_SERVER = () => {
     CLOSE_DB()
   })
 }
+
 const START_APP = async () => {
   try {
     await CONNECT_DB() // Connect to MongoDB
 
-    START_SERVER()
+    START_SERVER(app)
     MY_SERVICES.SERVICE_UPDATE_BROADCAST_DB()
     MY_SERVICES.repair()
-    START_WEB_SOCKET(env.SOCKET_PORT)
+    START_WEB_SOCKET(app)
     console.log(env.SOCKET_PORT) // Start WebSocket server
     // START_WEB_SOCKET()
     // console.log(a
@@ -72,5 +71,5 @@ const START_APP = async () => {
     process.exit(0)
   }
 }
-
+START_APP()
 export default START_APP
