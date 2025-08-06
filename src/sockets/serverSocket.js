@@ -5,7 +5,7 @@ import { server as WebSocketServer } from "websocket"
 const clients = new Set()
 
 // HTTP server chỉ để bắt request không hợp lệ
-const server = createServer((req, res) => {
+const server = createServer((_, res) => {
   res.writeHead(404)
   res.end()
 })
@@ -17,7 +17,7 @@ const wsServer = new WebSocketServer({
 })
 
 // Kiểm tra origin (có thể tùy chỉnh)
-function originIsAllowed(origin) {
+function originIsAllowed(_) {
   return true
 }
 
